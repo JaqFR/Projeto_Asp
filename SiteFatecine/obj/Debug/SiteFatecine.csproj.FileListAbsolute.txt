@@ -1,0 +1,7 @@
+C:\Users\Jac\Documents\Visual Studio 2010\Projects\SiteFatecine\SiteFatecine\bin\SiteFatecine.dll
+C:\Users\Jac\Documents\Visual Studio 2010\Projects\SiteFatecine\SiteFatecine\bin\SiteFatecine.pdb
+C:\Users\Jac\Documents\Visual Studio 2010\Projects\SiteFatecine\SiteFatecine\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jac\Documents\Visual Studio 2010\Projects\SiteFatecine\SiteFatecine\obj\Debug\SiteFatecine.dll
+C:\Users\Jac\Documents\Visual Studio 2010\Projects\SiteFatecine\SiteFatecine\obj\Debug\SiteFatecine.pdb
+C:\Users\Jac\Documents\Visual Studio 2010\Projects\SiteFatecine\SiteFatecine\bin\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\Jac\Documents\Visual Studio 2010\Projects\SiteFatecine\SiteFatecine\bin\FirebirdSql.Data.FirebirdClient.pdb

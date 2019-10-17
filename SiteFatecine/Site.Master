@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SiteFatecine.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .menu
+        {
+            font-size: medium;
+        }
+        .menu
+        {
+            font-size: small;
+        }
+        .menu
+        {
+            font-size: small;
+        }
+        .menu
+        {
+            font-weight: 700;
+        }
+        .menu
+        {
+            font-weight: 700;
+        }
+        .menu
+        {
+            font-weight: 700;
+        }
+    </style>
+
+    <script type="text/javascript">
+        if (document.images) {
+            img1 = new Image();
+            img1.src = "../img/topo_fatecine.jpg";
+            img2 = new Image();
+            img2.src = "../img/topo_fatecine2.jpg";
+            img3 = new Image();
+            img3.src = "../img/topo_fatecine3.jpg";
+            img4 = new Image();
+            img4.src = "../img/topo_fatecine4.jpg";
+            img5 = new Image();
+            img5.src = "../img/topo_fatecine5.jpg";
+        }
+    </script>
+
+</head>
+<body onload="aumenta()">
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div id="img" style="float:right; width:956px; height:131px">
+
+                <script type="text/javascript">
+                    // valor inicial usado
+                    valor = -1;
+                    var img = new Array();
+                    // frases ou imagem para troca | seguir a ordem
+                    img[0] = "<img src='../img/topo_fatecine.jpg'/>";
+                    img[1] = "<img src='../img/topo_fatecine2.jpg'/>";
+                    img[2] = "<img src='../img/topo_fatecine3.jpg'/>";
+                    img[3] = "<img src='../img/topo_fatecine4.jpg'/>";
+                    img[4] = "<img src='../img/topo_fatecine5.jpg'/>";
+
+                    function aumenta() {
+                        valor = valor+1;
+                        if(valor > img.length-1) {
+                            valor = 0;
+                        }
+                        // 1000 = 1 segundo para troca
+                        setTimeout("aumenta()", 3000);
+                        document.getElementById('img').innerHTML = img[valor];
+                    }
+                </script>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem Text="Filmes" 
+                            Value="Filmes" NavigateUrl="~/Pesquisar.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Pesquisar2.aspx" Text="Artistas" 
+                            Value="Artistas"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Sobre" Value="Sobre">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C1591A1-0126-431A-9218-82C062C0AB2E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteFatecine</RootNamespace>
+    <AssemblyName>SiteFatecine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\FirebirdClient\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\banco.mdb" />
+    <Content Include="Detalhes.aspx" />
+    <Content Include="Detalhes2.aspx" />
+    <Content Include="Fotos\filmes\aventuraAfrica.jpg" />
+    <Content Include="Fotos\filmes\belaDama.jpg" />
+    <Content Include="Fotos\filmes\campeao.jpg" />
+    <Content Include="Fotos\filmes\cantandoChuva.jpg" />
+    <Content Include="Fotos\filmes\casablanca.jpg" />
+    <Content Include="Fotos\filmes\cidadaoKane.jpg" />
+    <Content Include="Fotos\filmes\crepusculoDeuses.jpg" />
+    <Content Include="Fotos\filmes\disqueM.jpg" />
+    <Content Include="Fotos\filmes\forrestGump.jpg" />
+    <Content Include="Fotos\filmes\laranjaMecanica.jpg" />
+    <Content Include="Fotos\filmes\listaSchindler.jpg" />
+    <Content Include="Fotos\filmes\magicoOz.jpg" />
+    <Content Include="Fotos\filmes\malvada.jpg" />
+    <Content Include="Fotos\filmes\naquelaNoite.jpg" />
+    <Content Include="Fotos\filmes\novicaRebelde.jpg" />
+    <Content Include="Fotos\filmes\perigosa.jpg" />
+    <Content Include="Fotos\filmes\poderosoChefao1.jpg" />
+    <Content Include="Fotos\filmes\poderosoChefao2.jpg" />
+    <Content Include="Fotos\filmes\poderosoChefao3.jpg" />
+    <Content Include="Fotos\filmes\psicose.jpg" />
+    <Content Include="Fotos\filmes\ritmoLouco.jpg" />
+    <Content Include="Fotos\filmes\silencioInocentes.jpg" />
+    <Content Include="Fotos\filmes\temposModernos.jpg" />
+    <Content Include="Fotos\filmes\titanic.jpg" />
+    <Content Include="Fotos\filmes\ventoLevou.jpg" />
+    <Content Include="Fotos\pessoas\alfredHitchcock.jpg" />
+    <Content Include="Fotos\pessoas\alPacino.jpg" />
+    <Content Include="Fotos\pessoas\anthonyHopkins.jpg" />
+    <Content Include="Fotos\pessoas\audreyHepburn.jpg" />
+    <Content Include="Fotos\pessoas\avaGardner.jpg" />
+    <Content Include="Fotos\pessoas\barbraStreisand.jpg" />
+    <Content Include="Fotos\pessoas\betteDavis.jpg" />
+    <Content Include="Fotos\pessoas\bradPitt.jpg" />
+    <Content Include="Fotos\pessoas\caryGrant.jpg" />
+    <Content Include="Fotos\pessoas\charlieChaplin.jpg" />
+    <Content Include="Fotos\pessoas\charlizeTheron.jpg" />
+    <Content Include="Fotos\pessoas\clarkGable.jpg" />
+    <Content Include="Fotos\pessoas\clintEastwood.jpg" />
+    <Content Include="Fotos\pessoas\colinFirth.jpg" />
+    <Content Include="Fotos\pessoas\deNiro.jpg" />
+    <Content Include="Fotos\pessoas\elizabethTaylor.jpg" />
+    <Content Include="Fotos\pessoas\fernandaMontenegro.jpg" />
+    <Content Include="Fotos\pessoas\frankSinatra.jpg" />
+    <Content Include="Fotos\pessoas\fredAstaire.jpg" />
+    <Content Include="Fotos\pessoas\gingerRogers.jpg" />
+    <Content Include="Fotos\pessoas\graceKelly.jpg" />
+    <Content Include="Fotos\pessoas\gretaGarbo.jpg" />
+    <Content Include="Fotos\pessoas\humphreyBogart.jpg" />
+    <Content Include="Fotos\pessoas\ingridBergman.jpg" />
+    <Content Include="Fotos\pessoas\jackNicholson.jpg" />
+    <Content Include="Fotos\pessoas\jamesStewart.jpg" />
+    <Content Include="Fotos\pessoas\janeFonda.jpg" />
+    <Content Include="Fotos\pessoas\joanCrawford.jpg" />
+    <Content Include="Fotos\pessoas\jodieFoster.jpg" />
+    <Content Include="Fotos\pessoas\johnWayne.jpg" />
+    <Content Include="Fotos\pessoas\judyGarland.jpg" />
+    <Content Include="Fotos\pessoas\juliaRoberts.jpg" />
+    <Content Include="Fotos\pessoas\julieAndrews.jpg" />
+    <Content Include="Fotos\pessoas\kateWinslet.jpg" />
+    <Content Include="Fotos\pessoas\katharineHepburn.jpg" />
+    <Content Include="Fotos\pessoas\marilynMonroe.jpg" />
+    <Content Include="Fotos\pessoas\marleneDietrich.jpg" />
+    <Content Include="Fotos\pessoas\marlonBrando.jpg" />
+    <Content Include="Fotos\pessoas\merylStreep.jpg" />
+    <Content Include="Fotos\pessoas\morganFreeman.jpg" />
+    <Content Include="Fotos\pessoas\nataliePortman.jpg" />
+    <Content Include="Fotos\pessoas\nicolasCage.jpg" />
+    <Content Include="Fotos\pessoas\nicoleKidman.jpg" />
+    <Content Include="Fotos\pessoas\sandraBullock.jpg" />
+    <Content Include="Fotos\pessoas\sophiaLoren.jpg" />
+    <Content Include="Fotos\pessoas\tomHanks.jpg" />
+    <Content Include="Fotos\pessoas\vivienLeigh.jpg" />
+    <Content Include="Fotos\pessoas\williamHolden.jpg" />
+    <Content Include="Fotos\pessoas\williamWyler.jpg" />
+    <Content Include="Fotos\pessoas\zetaJones.jpg" />
+    <Content Include="img\cine claquete1.jpg" />
+    <Content Include="img\cinema2.jpg" />
+    <Content Include="img\claquete2.jpg" />
+    <Content Include="img\pipoca.jpg" />
+    <Content Include="img\topo_fatecine.jpg" />
+    <Content Include="img\topo_fatecine2.jpg" />
+    <Content Include="img\topo_fatecine3.jpg" />
+    <Content Include="img\topo_fatecine4.jpg" />
+    <Content Include="img\topo_fatecine5.jpg" />
+    <Content Include="Pesquisar.aspx" />
+    <Content Include="Pesquisar2.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalhes.aspx.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalhes.aspx.designer.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalhes2.aspx.cs">
+      <DependentUpon>Detalhes2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalhes2.aspx.designer.cs">
+      <DependentUpon>Detalhes2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisar.aspx.cs">
+      <DependentUpon>Pesquisar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pesquisar.aspx.designer.cs">
+      <DependentUpon>Pesquisar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisar2.aspx.cs">
+      <DependentUpon>Pesquisar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pesquisar2.aspx.designer.cs">
+      <DependentUpon>Pesquisar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fotos\pessoas\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2128</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
